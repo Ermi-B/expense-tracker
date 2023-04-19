@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Jquery -->
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <!-- Jquery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/vader/jquery-ui.css">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/120b4551ce.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Expense Tracker</title>
+</head>
+<body class="overflow-hidden">
+    <header class="row p-3">
+        <div class="col-3 col-sm-3 col-md-2 col-lg-2 d-flex justify-content-center align-items-center p-1">
+            <i class="fa-solid fa-bezier-curve fa-2xl"></i>
+        </div>
+        <div class="col-7 col-sm-6 col-md-10 col-lg-8 d-flex justify-content-evenly align-items-center p-1">
+            <h1 class="text-white">Expense Tracker</h1>
+        </div>        
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row m-3 d-flex justify-content-start">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 p-4 border shadow">
+                    <label for="expense-name" class="form-label">Expense Name</label>
+                    <input type="email" class="form-control mb-2" id="expense-name" placeholder="">
+
+                    <label for="amount" class="form-label">Amount</label>
+                    <input type="email" class="form-control mb-2" id="amount" placeholder="">
+
+                   
+
+                    <label for="datepicker">Date</label>
+                    <input id="datepicker" class="form-control mb-2" type="text">
+
+                
+                    <label for="exampleColorInput" class="form-label">Assign color</label>                    
+                    <input type="color" class="form-control form-control-color m-2" id="exampleColorInput" value="#563d7c" title="Choose your color">
+
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success justify-content-center">Submit</button>
+                    </div>
+
+                    
+                    
+                </div>
+                   
+
+
+            
+            
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8 p-4" id="list-display">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Expense Name</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>02/03/2021</td>
+                            <td>$12</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>                         
+                         
+                          
+                        </tbody>
+                      </table>
+                </div>
+            
+            </div>  
+                
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+    <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+        </script>
+</html>
